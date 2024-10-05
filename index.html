@@ -589,5 +589,22 @@ Borio sam se sa nizom problema zbog crne magije – sve u mom životu počelo je
       // Also support closing the modal on touch events for mobile devices
       document.getElementById("closeModal").addEventListener("touchstart", closeModal);
     </script>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.querySelector('.home-navbar-interactive');
+
+      window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Scrolling down, hide the navbar
+          navbar.style.top = '-80px';  // Adjust this value to the height of your header
+        } else {
+          // Scrolling up, show the navbar
+          navbar.style.top = '0';
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
+      });
+    </script>
   </body>
 </html>

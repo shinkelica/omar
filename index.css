@@ -1278,6 +1278,27 @@ html, body {
     display: none;
   }
 
+  .home-logo2 img {
+    width: 150px;  /* Adjust logo width */
+    height: auto;  /* Maintain aspect ratio */
+  }
+
+  .home-close-menu svg {
+    width: 40px;  /* Adjust the size of the 'X' icon */
+    height: 40px;
+  }
+
+  .home-links2 a {
+    font-size: 24px; /* Increase font size for all mobile links */
+    padding: 15px 0;  /* Add padding for spacing */
+    font-weight: bold; /* Optional: make text bold */
+  }
+
+  .home-link5, .home-link1, .home-link3 {
+    font-size: 24px; /* Increase the font size for mobile menu links */
+    padding: 15px 0;  /* Add more padding for spacing */
+  }
+
   .home-burger-menu {
     display: flex;
     align-items: center;

@@ -262,6 +262,10 @@ html, body {
   height: 464px;
   align-items: center;
 }
+.phone-number {
+  text-decoration: underline; /* Adds underline to indicate it's clickable */
+  cursor: pointer;           /* Changes the cursor to a pointer on hover */
+}
 .home-content1 {
   flex: 0 0 auto;
   width: 45%;
@@ -285,6 +289,17 @@ html, body {
 }
 .home-title1 {
   color: #0C4237FF;
+  font-size: 36px;
+  font-style: italic;
+  font-family: "Urbanist";
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--dl-space-space-unit);
+}
+
+.contact-me {
+  color: #0C4237FF;
+  margin-top: var(--dl-space-space-twounits);
   font-size: 36px;
   font-style: italic;
   font-family: "Urbanist";
@@ -461,6 +476,39 @@ html, body {
   padding-bottom: var(--dl-space-space-unit);
   background-color: var(--dl-color-scheme-white);
 }
+.home-card9-5 {
+  flex: 0 0 auto;
+  width: 32%;
+  display: flex;
+  position: relative;
+  max-width: 450px;
+  min-height: 480px;
+  align-items: center;
+  padding-left: 11px;
+  border-radius: 36px;
+  padding-right: 4px;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-size: cover;
+  justify-content: flex-end;
+  background-image: url("public/external/amajlija.png");
+  background-position: top;
+}
+.home-info9-5 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-scheme-white);
+}
+
+
 .home-text22 {
   font-size: 20px;
   font-style: normal;
@@ -662,7 +710,7 @@ html, body {
   align-items: center;
   flex-direction: column;
 }
-.home-card4, .home-card5, .home-card6, .home-card7, .home-card8, .home-card9, .home-card10, .home-card11 {
+.home-card4, .home-card5, .home-card6, .home-card7, .home-card8, .home-card9, .home-card9-5, .home-card10, .home-card11 {
   flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with 20px gap */
   display: flex;
   flex-direction: column;
@@ -701,7 +749,7 @@ html, body {
 }
 .home-card1, .home-card2, .home-card3,
 .home-card4, .home-card5, .home-card6,
-.home-card7, .home-card8, .home-card9, .home-card10, .home-card11 {
+.home-card7, .home-card8, .home-card9, .home-card9-5, .home-card10, .home-card11 {
   width: 100%;
   max-width: 450px;
   margin-bottom: 20px;
@@ -1125,7 +1173,7 @@ html, body {
     width: 50%;
     margin-right: var(--dl-space-space-unit);
   }
-  .home-card4, .home-card5, .home-card6, .home-card7, .home-card8, .home-card9, .home-card10, .home-card11 {
+  .home-card4, .home-card5, .home-card6, .home-card7, .home-card8, .home-card9-5, .home-card9, .home-card10, .home-card11 {
     flex: 1 1 calc(50% - 20px); /* 2 cards per row */
   }
   .home-image12 {
@@ -1585,14 +1633,14 @@ html, body {
   }
 }
 
-.home-info4, .home-info5, .home-info6, .home-info7, .home-info8, .home-info9, .home-info10, .home-info11 {
+.home-info4, .home-info5, .home-info6, .home-info7, .home-info8, .home-info9, .home-info9-5, .home-info10, .home-info11 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform 1.5s ease;
   background-color: rgba(255, 255, 255, 0.7); /* Adjust transparency */
 }
 
-.home-info4.visible, .home-info5.visible, .home-info6.visible, .home-info7.visible, .home-info8.visible, .home-info9.visible, .home-info10.visible, .home-info11.visible {
+.home-info4.visible, .home-info5.visible, .home-info6.visible, .home-info7.visible, .home-info8.visible, .home-info9.visible, .home-info9-5.visible, .home-info10.visible, .home-info11.visible {
   opacity: 1;
   transform: translateY(0);
 }
